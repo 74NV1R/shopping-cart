@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-6">
+            <h3>
+                Fruit market
+            </h3>
+            <ul class="list-group" id="fruit_list">
+                <li class="list-group-item">Apple <br>Price: 10 <button id="add" type="button" class="btn btn-warning"
+                        onclick="addToCart('Apple', 10)">add to cart</button></li>
+                <li class="list-group-item">Banana <br>Price: 11 <button id="add" type="button" class="btn btn-warning"
+                        onclick="addToCart('Banana', 11)">add to cart</button></li>
+                <li class="list-group-item">Kiwi <br>Price: 12 <button id="add" type="button" class="btn btn-warning"
+                        onclick="addToCart('Kiwi', 12)">add to cart</button></li>
+                <li class="list-group-item">Jackfruit <br>Price: 13 <button id="add" type="button"
+                        class="btn btn-warning" onclick="addToCart('Jackfruit', 13)">add to cart</button>
+                </li>
+                <li class="list-group-item">Watermelon <br>Price: 14 <button id="add" type="button"
+                        class="btn btn-warning" onclick="addToCart('Watermelon', 14)">add to cart</button>
+                </li>
+                <li class="list-group-item">Mango <br>Price: 15 <button id="add" type="button" class="btn btn-warning"
+                        onclick="addToCart('Mango', 15)">add to cart</button></li>
+                <li class="list-group-item">Grape <br>Price: 16 <button id="add" type="button" class="btn btn-warning"
+                        onclick="addToCart('Grape', 16)">add to cart</button></li>
+                <li class="list-group-item">Berry <br>Price: 17 <button id="add" type="button" class="btn btn-warning"
+                        onclick="addToCart('Berry', 17)">add to cart</button></li>
+            </ul>
+        </div>
+
+        <div class="col-5" id="cart">
+            <h3>Your cart:</h3>
+
+            <ul class="list-group" id="cartItems">
+
+            </ul>
+            <h3>Total price: </h3>
+            <h3 id="Price"></h3>
+        </div>
+    </div>
+
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
